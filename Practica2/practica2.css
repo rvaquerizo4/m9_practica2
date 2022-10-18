@@ -1,0 +1,42 @@
+body{
+    max-width: fit-content;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    margin: 0%;
+    height: 5%;
+  }
+.myHeader{ 
+    float: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+button{
+    all:unset;
+    margin: 11px;
+
+}
+.navigator {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: white;
+}
+.navigator:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+img{
+    width: 100px;
+}
