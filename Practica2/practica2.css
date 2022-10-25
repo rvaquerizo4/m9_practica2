@@ -1,6 +1,9 @@
 body{
     max-width: fit-content;
 }
+p {
+    padding-top: 1%;
+}
 header {
     position: sticky;
     top: 0;
@@ -8,11 +11,10 @@ header {
     background-color: black;
     margin: 0%;
     height: 5%;
+    z-index: 1;
   }
-.myHeader{ 
+.derecha{ 
     float: right;
-    height: 50px;
-    line-height: 50px;
 }
 
 .clearfix{
@@ -37,6 +39,73 @@ button{
     background-size: 100% 2px;
 }
 
-img{
-    width: 100px;
+#container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tamaño{
+    width: 100%;
+}
+
+.tamañoimg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+
+.rest{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: white;
+    font-weight: lighter;
+    font-size: 175%;
+    z-index: 0;
+}
+.rest2{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    color: white;
+    font-size: 100%;
+
+}
+span{
+    font-weight: 1000;
+}
+
+.sobre{
+    margin-top: 5%;
+}
+.tamañoimg2{
+    width: 30%;
+    float: left;
+    margin-right: 16px;
+}
+
+.sobre2{
+    margin-top: 105px;
+}
+
+.cocina{
+    width: 30%;
+    float: right;
+}
+.carta{
+    margin-top: 180px;
+}
+
+.menu{
+    width: 100%;
+    background-color: black;
+    margin: 0%;
+    height: 5%;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    line-height: 29px;
+}
+
+.menuizquierda{
+    border: 1px solid black;
 }

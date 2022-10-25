@@ -9,11 +9,13 @@
 <body>
     <!--Aqui començala capçalera de la web-->
     <header>
-        <div class="header" id="myHeader">
-            <nav id="navegador">
-                <button><a href="" class="navigator">Nosaltres</a></button>
-                <button><a href="" class="navigator">Menu</a></button>
-                <button><a href="" class="navigator">Galeria</a></button>
+        <div>
+            <nav>
+                <section>
+                    <button class="derecha"><a href="" class="navigator">Nosaltres</a></button>
+                    <button class="derecha"><a href="" class="navigator">Menu</a></button>
+                    <button class="derecha"><a href="" class="navigator">Galeria</a></button>
+                </section>
             </nav>
         </div>
         <div class="clearfix"></div>
@@ -21,35 +23,43 @@
     <!--Part principal de la web-->
     <main>
         <section>
-            <img src="./images/header.jpg" alt="Imatge de fons al header de una taula posta amb coberts">
-            <h2>Restaurant els coberts</h2>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. </p>
+            <div class="tamaño"><img class="tamañoimg" src="./images/header.jpg" alt="Imatge de fons al header de una taula posta amb coberts"></div>
+            <h2 class="rest">Restaurant <span>els coberts</span></h2>
+            <p class="rest2">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
         </section>
         <section id="container">
-            <div>
+            <div class="sobre">
                 <h1>Sobre nosaltres</h1>
                 <section>
-                    <img src="./images/nosaltres1.jpg" alt="Imatge del restaurant de la part del menjador">
-                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                    <div class="tamaño"><img class="tamañoimg2" src="./images/nosaltres1.jpg" alt="Imatge del restaurant de la part del menjador"></div>
+                    <p class="flotar">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
+                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
+                        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
                         cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
                         galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
                         No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos.</p>
                 </section>
-                <section>
-                    <img src="./images/nosaltres2.jpg" alt="Imatge del restaurant de la part de la cuina">
+                <section class="sobre2">
+                    <div class="tamaño"><img class="cocina" src="./images/nosaltres2.jpg" alt="Imatge del restaurant de la part de la cuina"></div>
                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                    cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
+                    galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
+                    No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos,Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                     Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
                     cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
                     galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
                     No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos.</p>
                 </section>
             </div>
-            <div>
+            <div class="carta">
                 <h1>Carta</h1>
-                <h2>Menú</h2>
+                <h2 class="menu">Menú</h2>
                 <section>
-                    <h3>Menú 1</h3>
+                    <div class="menuizquierda"><h3>Menú 1</h3></div>
                     <h2>Contingut</h2>
                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
@@ -60,7 +70,7 @@
                         <img src="./images/menu_starter.jpg" alt="Menjar de un plat de pasta">
                 </section>
                 <section>
-                    <h3>Menú 2</h3>
+                    <div class="menuizquierda"><h3>Menú 2</h3></div>
                     <h2>Contingut</h2>
                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
