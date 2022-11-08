@@ -1,7 +1,7 @@
-body{
-    max-width: fit-content;
-}
 /*Aqui empieza el menu con float*/
+body{
+    margin: 0px;
+}
 header {
     position: sticky;
     top: 0;
@@ -135,21 +135,20 @@ span{
 /*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
 .imagenesmenu{
     display: grid;
-    grid-column: 1;
-    grid-row: 1;
+
 }
 
 .imgmenu1{
     grid-column: 1;
     grid-row: 1;
-    width: 95%;
+    width: 93%;
     margin-left: 0%;
 }
 
 .imgmenu2{
     grid-column: 2;
     grid-row: 1;
-    width: 95%;
+    width: 93%;
 }
 
 .menuizquierda2{
@@ -177,13 +176,13 @@ span{
 .imgmenu3{
     grid-column: 1;
     grid-row: 1;
-    width: 95%;
+    width: 93%;
 }
 
 .imgmenu4{
     grid-column: 2;
     grid-row: 1;
-    width: 95%;
+    width: 93%;
 }
 /*Aqui empieza la galeria de imagenes maquetada con flex-wrap*/
 .contenedorflex{
