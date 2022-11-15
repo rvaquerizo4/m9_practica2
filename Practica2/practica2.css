@@ -128,6 +128,8 @@ span{
 }
 
 
+
+
 .contingut{
     grid-column: 2/4;
     grid-row: 3;
@@ -150,6 +152,10 @@ span{
     grid-row: 1;
     width: 93%;
 }
+span > span{
+    display: none;
+}
+
 
 .menuizquierda2{
     border: 1px solid black;
