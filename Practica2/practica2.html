@@ -2,8 +2,10 @@
     <head>
         <meta charset="utf-8">
         <title>Activitat 2</title>
-        <meta name="practica2" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./practica2.css">
+        <link rel="stylesheet" href="./practica2_768.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="./practica2_576.css" media="screen and (max-width: 576px)">
     </head>
 
 <body>
@@ -29,7 +31,7 @@
         </section>
         <section id="container">
             <div class="sobre">
-                <h1>Sobre nosaltres</h1>
+                <h1 id="nosaltres">Sobre nosaltres</h1>
                 <section>
                     <div class="tamaño"><img class="tamañoimg2" src="./images/nosaltres1.jpg" alt="Imatge del restaurant de la part del menjador"></div>
                     <p class="flotar">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
@@ -72,7 +74,9 @@
                             No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos.</p>
                         <div class="imagenesmenu">
                             <img class="imgmenu1" src="./images/menu_pasta.jpg" alt="Menjar de un plat de pasta">
+                            <div class="txt">Pasta</div>
                             <img class="imgmenu2" src="./images/menu_starter.jpg" alt="Menjar de un entrant">
+                            <div class="txt">Entrants</div>
                         </div>
                     </div>
                 <h3 class="menuizquierda2">Menú 2</h3>
@@ -89,11 +93,13 @@
                         No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos.</p>
                     <div class="imagenesmenu2">
                         <img class="imgmenu3"src="./images/menu_meat.jpg" alt="Menjar de un plat de carn">
+                        <div class="txt">Carns</div>
                         <img class="imgmenu4"src="./images/menu_fish.jpg" alt="Menjar de un peix">
+                        <div class="txt">Peix</div>
                     </div>
                 </div>
             </section>
-                <h1>Galeria d'imatges</h1>
+                <h1 class="galery">Galeria d'imatges</h1>
                 <section class="contenedorflex">
                     <img class="imageflex1" src="./images/img_salad.jpg" alt="Menjar de un plat de ensalada">
                     <img class="imageflex" src="./images/img_salad.jpg" alt="Menjar de un plat de ensalada">

@@ -1,0 +1,167 @@
+/*Media queries 576 px*/
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0px;
+    }
+    header {
+        background-color: white;
+    }
+    .derecha{ 
+        float: left;
+    }
+
+    .navigator {
+        color: black;
+    }
+    
+    .tamañoimg{
+        width: 100%;
+        max-width: 576px;
+        min-width: 100px;
+    }
+
+    .rest{
+        top: 7%;
+        left: 4%;
+        font-size: 165%;
+    }
+
+    .rest2{
+        top: 12%;
+        left: 4%;
+        font-size: 80%;
+    }
+
+    #container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .tamañoimg2{
+        width: 100%;
+        border-radius: 7px;
+        padding-bottom: 10px;
+    }
+
+    #nosaltres{
+        text-align: center;
+    }
+
+    .cocina{
+        width: 100%;
+        border-radius: 7px;
+        margin-top: -30px;
+    }
+
+    /* Aqui empieza la seccion maquetada con grid */
+    .contenedor{
+        gap: 1px;
+    }
+    .carta{
+        grid-column: 1/4;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .menuizquierda{
+        grid-column: 1/4;
+        grid-row: 2;
+        width: 100%;
+        height: 45px;
+        line-height: 29px;
+        padding-top: 15px;
+    }
+
+    .contingut{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+
+    /*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
+    .imagenesmenu{
+        flex-wrap: wrap;
+    }
+    
+    .imgmenu1{
+        width: 100%;
+    }
+    
+    .imgmenu2{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    .imgmenu3{
+        width: 100%;
+    }
+    
+    .imgmenu4{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    /*Para poner pie de pagina encima de foto*/
+    .imagenesmenu , .imagenesmenu2{
+        display:table;
+    }
+
+    .imgmenu1, .imgmenu2, .imgmenu3, .imgmenu4 {
+        margin:0;
+        padding:0;
+        margin-top: 35px;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        line-height: 45%;
+        display:table-caption;
+        margin:0;
+        padding:0;
+        background:rgba(0, 0, 0, 0.4);
+        color:white;
+        text-align:center;
+        position:relative;
+        height:0;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        background:rgba(0, 0, 0, 0.4);
+        display:block;
+        padding: 40px;
+        text-shadow:0 0 15px white;
+        margin-top: -80px;
+    }
+
+    /*menu 2*/
+    .menuizquierda2{
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 100%;
+        height: 45px;
+        margin-top: 30px;
+        line-height: 29px;
+        padding-top: 15px;
+    }
+
+    .contingut2{
+        grid-column: 1/4;
+        grid-row: 6;
+        margin-top: 0;
+    }
+
+    /*Aqui empieza la galeria de imagenes*/
+    .imageflex{
+        width: 100%;
+    }
+    
+    .imageflex1{
+        width: 100%;
+        
+    }
+
+    /*Aqui empieza el footer*/
+     .restaurant {
+        display: none;
+    }   
+}
