@@ -1,8 +1,5 @@
 /*Media queries 768 px*/
 @media screen and (max-width: 768px) {
-    body{
-        margin: 0px;
-    }
     header {
         background-color: white;
     }
@@ -15,7 +12,6 @@
     }
     
     .tamañoimg{
-        width: 100%;
         max-width: 768px;
         min-width: 100px;
     }
@@ -58,7 +54,7 @@
     }
     .carta{
         grid-column: 1/1;
-        grid-row: 1;
+
         text-align: center;
         color: #12203e;
     }
@@ -74,7 +70,6 @@
     .contingut{
         margin-left: 10px;
     }
-
 
     /*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
     .imagenesmenu{
@@ -111,25 +106,26 @@
         margin-top: 35px;
     }
 
-    .imagenesmenu span, .imagenesmenu2 span{
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
         line-height: 45%;
         display:table-caption;
         margin:0;
         padding:0;
-        background:#646464;
+        background:rgba(0, 0, 0, 0.4);
         color:white;
         text-align:center;
         position:relative;
         height:0;
     }
 
-    .imagenesmenu span span, .imagenesmenu2 span span{
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
         background:rgba(0, 0, 0, 0.4);
         display:block;
         padding: 40px;
         text-shadow:0 0 15px white;
-        margin-top: 224.2px;
+        margin-top: -80px;
     }
+    
     /*menu 2*/
     .menuizquierda2{
         margin-top: 70px;
@@ -169,15 +165,6 @@
     }
 
     /*Aqui empieza el footer*/
-    .imgfooter{
-        width: 18px;
-        height: 20px;
-        margin-top: 15px;
-        margin-left: 25px;
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-    
     .restaurant {
         margin-top: 16px;
         margin-left: 21%;
