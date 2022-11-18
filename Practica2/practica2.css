@@ -190,6 +190,7 @@ span > span{
     grid-row: 1;
     width: 93%;
 }
+
 /*Aqui empieza la galeria de imagenes maquetada con flex-wrap*/
 .contenedorflex{
     display: flex;

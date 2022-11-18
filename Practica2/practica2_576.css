@@ -106,17 +106,17 @@
     }
 
     /*Para poner pie de pagina encima de foto*/
-    div.img{
+    .imagenesmenu , .imagenesmenu2{
         display:table;
     }
 
-    div.img img{
+    .imgmenu1, .imgmenu2, .imgmenu3, .imgmenu4 {
        margin:0;
        padding:0;
        margin-top: 35px;
     }
 
-    div.img span{
+    .imagenesmenu span, .imagenesmenu2 span{
        line-height: 45%;
        display:table-caption;
        margin:0;
@@ -128,13 +128,14 @@
        height:0;
     }
 
-    div.img span span{
-       background:rgba(0, 0, 0, 0.6);
+    .imagenesmenu span span, .imagenesmenu2 span span{
+       background:rgba(0, 0, 0, 0.4);
        display:block;
        padding: 40px;
        text-shadow:0 0 15px white;
        margin-top: 231.2px;
     }
+
     /*menu 2*/
     .menuizquierda2{
         grid-column: 1/4;
@@ -149,6 +150,7 @@
     .contingut2{
         grid-column: 1/4;
         grid-row: 6;
+        margin-top: 0;
     }
 
     /*Aqui empieza la galeria de imagenes*/
