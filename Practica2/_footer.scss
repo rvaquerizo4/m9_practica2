@@ -1,0 +1,19 @@
+/*Aqui empieza el footer*/
+.containerfooter{
+    display: flex;
+    background-color: $negro;
+    color: $blanco;
+}
+
+.imgfooter{
+    width: 18px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.restaurant {
+    margin-left: 67%;
+}

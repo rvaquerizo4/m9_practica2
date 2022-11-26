@@ -1,0 +1,580 @@
+/*import*/
+@import "footer";
+/*Variables*/
+$blanco: white;
+$negro: black;
+
+/*Aniuaments*/
+font: {
+    family: arial, sans-serif;
+    size: 16px;
+}
+
+/*Aqui empieza el menu con float*/
+body{
+    margin: 0px;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: $negro;
+    margin: 0%;
+    height: 5%;
+    z-index: 1;
+  }
+.derecha{ 
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+button{
+    all:unset;
+    margin: 11px;
+
+}
+.navigator {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: $blanco;
+}
+.navigator:hover, a:focus {
+    background-size: 100% 2px;
+}
+/* Aqui empieza el sobre nosaltres maquetado con float*/
+#container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tamaño{
+    width: 100%;
+}
+
+.tamañoimg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.rest{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: $blanco;
+    font-weight: lighter;
+    font-size: 175%;
+    z-index: 0;
+}
+.rest2{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    color: $blanco;
+    font-size: 100%;
+    padding-top: 1%;
+}
+
+span{
+    font-weight: 1000;
+}
+
+.sobre{
+    margin-top: 5%;
+}
+.tamañoimg2{
+    width: 20%;
+    float: left;
+    margin-right: 16px;
+}
+
+.sobre2{
+    margin-top: 105px;
+}
+
+.cocina{
+    width: 20%;
+    float: right;
+}
+/* Aqui empieza la seccion maquetada con grid */
+.contenedor{
+    display: grid;
+    gap: 30px;
+    margin-top: 80px;
+    width: 100%;
+}
+.carta{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 150%;
+}
+
+.menu{
+    width: 100%;
+    background-color: $negro;
+    margin: 0%;
+    height: 45px;
+    color: $blanco;
+    text-align: center;
+    padding-top: 12px;
+    line-height: 29px;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.menuizquierda{
+    border: 1px solid $negro;
+    grid-column: 1;
+    grid-row: 3/4;
+    width: 110%;
+    height: 95%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 22em;
+}
+
+.contingut{
+    grid-column: 2/4;
+    grid-row: 3;
+}
+/*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
+.imagenesmenu{
+    display: grid;
+}
+
+.imgmenu1{
+    grid-column: 1;
+    grid-row: 1;
+    width: 93%;
+    margin-left: 0%;
+}
+
+.imgmenu2{
+    grid-column: 2;
+    grid-row: 1;
+    width: 93%;
+}
+.txt, .txt2 {
+    display: none;
+}
+
+
+.menuizquierda2{
+    border: 1px solid $negro;
+    grid-column: 1;
+    grid-row: 4/4;
+    width: 110%;
+    height: 95%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 22em;
+}
+
+.contingut2{
+    grid-column: 2/4;
+    grid-row: 4;
+}
+/*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
+.imagenesmenu2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.imgmenu3{
+    grid-column: 1;
+    grid-row: 1;
+    width: 93%;
+}
+
+.imgmenu4{
+    grid-column: 2;
+    grid-row: 1;
+    width: 93%;
+}
+
+/*Aqui empieza la galeria de imagenes maquetada con flex-wrap*/
+.contenedorflex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.imageflex{
+    width: 23%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.imageflex1{
+    width: 23%;
+    margin-right: 10px;
+    margin-top: 10px;
+    filter: brightness(50%);
+}
+
+.imageflex:hover{
+    border: 2px solid $negro;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    filter: brightness(70%);
+}
+
+.imageflex1:hover{
+    border: 2px solid $negro;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    filter: brightness(30%);
+}
+
+/*Media queries 576 px*/
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0px;
+    }
+    header {
+        background-color: $blanco;
+    }
+    .derecha{ 
+        float: left;
+    }
+
+    .navigator {
+        color: $negro$negro;
+    }
+    
+    .tamañoimg{
+        width: 100%;
+        max-width: 576px;
+        min-width: 100px;
+    }
+
+    .rest{
+        top: 7%;
+        left: 4%;
+        font-size: 165%;
+    }
+
+    .rest2{
+        top: 12%;
+        left: 4%;
+        font-size: 80%;
+    }
+
+    #container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .tamañoimg2{
+        width: 100%;
+        border-radius: 7px;
+        padding-bottom: 10px;
+    }
+
+    #nosaltres{
+        text-align: center;
+    }
+
+    .cocina{
+        width: 100%;
+        border-radius: 7px;
+        margin-top: -30px;
+    }
+
+    /* Aqui empieza la seccion maquetada con grid */
+    .contenedor{
+        gap: 1px;
+    }
+    .carta{
+        grid-column: 1/4;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .menuizquierda{
+        grid-column: 1/4;
+        grid-row: 2;
+        width: 100%;
+        height: 45px;
+        line-height: 29px;
+        padding-top: 15px;
+    }
+
+    .contingut{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+
+    /*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
+    .imagenesmenu{
+        flex-wrap: wrap;
+    }
+    
+    .imgmenu1{
+        width: 100%;
+    }
+    
+    .imgmenu2{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    .imgmenu3{
+        width: 100%;
+    }
+    
+    .imgmenu4{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    /*Para poner pie de pagina encima de foto*/
+    .imagenesmenu , .imagenesmenu2{
+        display:table;
+    }
+
+    .imgmenu1, .imgmenu2, .imgmenu3, .imgmenu4 {
+        margin:0;
+        padding:0;
+        margin-top: 35px;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        line-height: 45%;
+        display:table-caption;
+        margin:0;
+        padding:0;
+        background:rgba(0, 0, 0, 0.4);
+        color:$blanco;
+        text-align:center;
+        position:relative;
+        height:0;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        background:rgba(0, 0, 0, 0.4);
+        display:block;
+        padding: 40px;
+        text-shadow:0 0 15px $blanco;
+        margin-top: -80px;
+    }
+
+    /*menu 2*/
+    .menuizquierda2{
+        grid-column: 1/4;
+        grid-row: 5;
+        width: 100%;
+        height: 45px;
+        margin-top: 30px;
+        line-height: 29px;
+        padding-top: 15px;
+    }
+
+    .contingut2{
+        grid-column: 1/4;
+        grid-row: 6;
+        margin-top: 0;
+    }
+
+    /*Aqui empieza la galeria de imagenes*/
+    .imageflex{
+        width: 100%;
+    }
+    
+    .imageflex1{
+        width: 100%;
+        
+    }
+
+    /*Aqui empieza el footer*/
+     .restaurant {
+        display: none;
+    }   
+}
+
+
+/*Media queries 768 px*/
+@media screen and (max-width: 768px) {
+    header {
+        background-color: $blanco;
+    }
+    .derecha{ 
+        float: left;
+    }
+
+    .navigator {
+        color: $negro;
+    }
+    
+    .tamañoimg{
+        max-width: 768px;
+        min-width: 100px;
+    }
+
+    .rest{
+        top: 7%;
+        left: 4%;
+        font-size: 165%;
+    }
+
+    .rest2{
+        top: 12%;
+        left: 4%;
+        font-size: 80%;
+    }
+
+    #container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .tamañoimg2{
+        width: 100%;
+        border-radius: 7px;
+        padding-bottom: 10px;
+    }
+
+    #nosaltres{
+        text-align: center;
+    }
+
+    .cocina{
+        width: 100%;
+        border-radius: 7px;
+        margin-top: -60px;
+    }
+
+    /* Aqui empieza la seccion maquetada con grid */
+    .contenedor{
+        gap: 1px;
+    }
+    .carta{
+        grid-column: 1/1;
+
+        text-align: center;
+        color: #12203e;
+    }
+    .menu{
+        background-color: #12203e;
+    }
+    .menuizquierda{ 
+        width: 100%;
+        height: 100%;
+        line-height: 45em;
+    }
+
+    .contingut{
+        margin-left: 10px;
+    }
+
+    /*Aplico otro grid en las imagenes, ya que no se aplica el grid principal*/
+    .imagenesmenu{
+        flex-wrap: wrap;
+    }
+    
+    .imgmenu1{
+        width: 100%;
+    }
+    
+    .imgmenu2{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    .imgmenu3{
+        width: 100%;
+    }
+    
+    .imgmenu4{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    /*Para poner pie de pagina encima de foto*/
+    .imagenesmenu , .imagenesmenu2{
+        display:table;
+    }
+
+    .imgmenu1, .imgmenu2, .imgmenu3, .imgmenu4 {
+        margin:0;
+        padding:0;
+        margin-top: 35px;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        line-height: 45%;
+        display:table-caption;
+        margin:0;
+        padding:0;
+        background:rgba(0, 0, 0, 0.4);
+        color:$blanco;
+        text-align:center;
+        position:relative;
+        height:0;
+    }
+
+    .imagenesmenu .txt, .imagenesmenu2 .txt{
+        background:rgba(0, 0, 0, 0.4);
+        display:block;
+        padding: 40px;
+        text-shadow:0 0 15px $blanco;
+        margin-top: -80px;
+    }
+    
+    /*menu 2*/
+    .menuizquierda2{
+        margin-top: 70px;
+        width: 100%;
+        line-height: 45em;
+        height: 93.5%;
+    }
+
+    .contingut2{
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+
+    /*Aqui empieza la galeria de imagenes*/
+    .galery{
+        margin-top: 80px;
+    }
+    .imageflex{
+        width: 44%;
+        margin-left: 16px;
+        border: 1px solid $negro;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding: 3px;
+    }
+    
+    .imageflex1{
+        border: 1px solid $negro;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding: 3px;
+        width: 44%;
+        margin-left: 16px;
+        
+    }
+
+    /*Aqui empieza el footer*/
+    .restaurant {
+        margin-top: 16px;
+        margin-left: 21%;
+    }
+    
+}
